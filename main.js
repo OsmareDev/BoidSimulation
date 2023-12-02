@@ -19,7 +19,7 @@ function setup() {
     draw_points();
     flock = new Flock;
 
-    /* generar tantos boids como puntos */
+    /* generate as many boids as points */
     
     for (i=0; i<puntos.length;i++){
         boid = new Boid(Math.random() * 1503, Math.random() * 300,puntos[i], Math.random()*5);

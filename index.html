@@ -20,42 +20,42 @@
   <div id="container">
   <div class="agrupamiento">
     <h3>Instrucciones</h3>
-    Pulsa e y clica para cargar una particula de electricidad <br>
-    Pulsa f y arrastra y haz click para que teman al cursor <br>
-    Pulsa c para que intercambien posiciones aleatoriamente <br>
-    Pulsa s para descargar todas las particulas <br>
+    Press 'e' and click to charge with electricity the closest particle <br>
+    Press 'f' and drag to make the particles fear the cursor <br>
+    Press 'c' to make the particles change positions randomly <br>
+    Press 's' to discharge all the particles <br>
     <hr>
   </div>
 
   <div class="agrupamiento">
-    <h3>Variables generales</h3>
+    <h3>General variables</h3>
 
-    <label for="texto">texto a representar por las particulas</label>
+    <label for="texto">text to represent by the particles</label>
     <input type="text" name="texto" id="texto" value="agua" onchange="flock.newPhrase()">
 
     <hr>
 
-    <label for="cambio_tam">Cambio de tamaño</label>
+    <label for="cambio_tam">Resize</label>
     <input type="checkbox" name="cambio_tam" id="cambio_tam" onchange="flock.OnOffTam()" checked>
 
     <hr>
 
-    <label for="cambio_color">Cambio de color</label>
+    <label for="cambio_color">Recolor</label>
     <input type="checkbox" name="cambio_color" id="cambio_color" onchange="flock.OnOffCol()" checked>
 
     <hr>
   </div>
 
   <div class="agrupamiento">
-    <h3>Variables intercambio</h3>
+    <h3>Exchange variables</h3>
 
-    <label for="rotate">Las particulas cambian de target con el siguiente: </label>
+    <label for="rotate">The particles change target with the next: </label>
     <input type="checkbox" name="rotate" id="rotate" onchange="flock.OnOffRot()" checked>
 
     <div id="rotvar">
       <ul>
       <li>
-        <label for="t_rotation">tiempo entre rotaciones (en seg)</label>
+        <label for="t_rotation">time between rotations (in sec)</label>
         <input type="number" name="t_rotation" id="t_rotation" onchange="flock.ChangeRotTime()" value="0.5" step="0.1" min="0.1">
       </li>
       </ul>
@@ -65,65 +65,65 @@
   </div>
 
   <div class="agrupamiento">
-    <h3>Variables descargas</h3>
+    <h3>Electrocution variables</h3>
 
-    <label for="t_next"> tiempo entre descargas (en s) </label>
+    <label for="t_next"> time between electrocutions (in s) </label>
     <input type="number" name="t_next" id="t_next" step="0.05" min="0.05" max="60" value="0.1" onchange="flock.changeTNext();">
     
     <hr>
 
-    <label for="vecino"> a quien se elige en la siguiente descarga: </label>
+    <label for="vecino"> who is chosen for the following electrocution: </label>
     <select id="vecino" name="vecino" onchange="flock.changeVecino();">
-      <option value="1" selected>Vecino cercano</option>
-      <option value="2">Vecino lejano</option>
-      <option value="3">Vecino aleatorio</option>
+      <option value="1" selected>close neighbor</option>
+      <option value="2">distant neighbor</option>
+      <option value="3">Random neighbor</option>
     </select>
 
     <hr>
 
-    <label for="n_des">numero de particulas maximas afectadas por descarga</label>
+    <label for="n_des">number of maximum particles affected by electricity</label>
     <input type="number" name="n_des" id="n_des" onchange="flock.ChangeNVec()" value="1" min="1">
 
     <hr>
   </div>
 
   <div class="agrupamiento">
-    <h3>Variables flocking</h3>
+    <h3>Flocking variables</h3>
 
-    <label for="flock">se hace uso del flocking: </label>
+    <label for="flock">flocking is used: </label>
     <input type="checkbox" name="flock" id="flock" onchange="flock.OnOffFlocking()" checked>
     <div id="siflock">
       <ul>
         <li>
-        <label for="separacion">Separacion</label>
+        <label for="separacion">Separation</label>
         <input type="number" name="separacion" id="separacion" value="10" onchange="flock.ChangeSep()">
         </li>
 
         <hr>
 
         <li>
-        <label for="distVecino">Distancia a la que se tiene en cuenta el vecino</label>
+        <label for="distVecino">Distance at which the neighbor is taken into account</label>
         <input type="number" name="distVecino" id="distVecino" value="50" onchange="flock.ChangeDist()">
         </li>
 
         <hr>
 
         <li>
-        <label for="Fseparacion">Fuerza de separacion</label>
+        <label for="Fseparacion">Separation force</label>
         <input type="number" name="Fseparacion" id="Fseparacion" step="0.1" value="1" onchange="flock.ChangeFSep()">
         </li>
 
         <hr>
 
         <li>
-        <label for="Falign">Fuerza de alineamiento</label>
+        <label for="Falign">Alignment force</label>
         <input type="number" name="Falign" id="Falign" step="0.1" value="1" onchange="flock.ChangeFAli()">
         </li>
 
         <hr>
 
         <li>
-        <label for="FCohesion">Fuerza de cohesion</label>
+        <label for="FCohesion">cohesive force</label>
         <input type="number" name="FCohesion" id="FCohesion" step="0.1" value="1" onchange="flock.ChangeFCoh()">
         </li>
 

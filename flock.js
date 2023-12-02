@@ -2,7 +2,7 @@ class Flock {
     boids;
     next_point;
     puntos;
-    // variable de cambio de objetivo por el de al lado
+    // variable change of objective for the one next to it
     rotation;
     t_rotation;
 
