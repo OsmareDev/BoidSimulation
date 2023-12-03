@@ -1,5 +1,6 @@
 # BoidSimulation
 [simulation](https://osmaredev.github.io/BoidSimulation/) of Boids and flock behavior using p5.js library
+![a1](https://github.com/OsmareDev/BoidSimulation/assets/50903643/432d9302-6be6-4c91-8c8e-2b572ebb35d8)
 
 ### English
 
