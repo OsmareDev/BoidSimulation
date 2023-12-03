@@ -2,7 +2,7 @@
 [simulation](https://osmaredev.github.io/BoidSimulation/) of Boids and flock behavior using p5.js library
 ![a1](https://github.com/OsmareDev/BoidSimulation/assets/50903643/432d9302-6be6-4c91-8c8e-2b572ebb35d8)
 
-### English
+# English
 
 A simulation of boids and flocks refers to the computational representation of a model that simulates the collective behavior of individual entities called "boids" that are grouped into sets known as "flocks" and serves to create interaction between individuals of said groups among other things.
 
@@ -22,7 +22,7 @@ By mixing all these rules, a more natural behavior of individuals is achieved. A
 
 2. Electricity: The option to charge one of the particles with electricity has been added to the program, which according to the imposed regulations will charge another, each one firing in the opposite direction to said discharge. The number of discharges per particle and the choice of these can be chosen by the user.
 
-### Español
+# Español
 
 Una simulación de boids y flocks se refiere a la representación computacional de un modelo que simula el comportamiento colectivo de entidades individuales llamadas "boids" que se agrupan en conjuntos conocidos como "flocks" y sirve para crear interacción entre individuos de dichos grupos entre otras cosas.
 
